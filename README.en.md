@@ -10,16 +10,14 @@ Runs entirely on your machine: no network requests, no runtime dependencies.
 
 Four commands, all rebindable in **Settings → Hotkeys** by searching for `Note to JSON`:
 
-| Command (as shown in the palette) | What it does | Default hotkey |
+| Command | What it does | Default hotkey |
 | --- | --- | --- |
-| `Note to JSON: 格式化` | Normalizes Markdown structure: headings, lists, blank lines, code blocks, tables | `Ctrl+Alt+F` |
-| `Note to JSON: 简化` | Removes redundant blank lines to make notes compact (never merges paragraphs) | `Ctrl+Alt+S` |
-| `Note to JSON: 格式化 JSON` | Re-indents JSON with 2 spaces | `Ctrl+Alt+J` |
-| `Note to JSON: 压缩 JSON` | Removes all whitespace, producing a single line | `Ctrl+Alt+M` |
+| `Note to JSON: Format` | Normalizes Markdown structure: headings, lists, blank lines, code blocks, tables | `Ctrl+Alt+F` |
+| `Note to JSON: Simplify` | Removes redundant blank lines to make notes compact (never merges paragraphs) | `Ctrl+Alt+S` |
+| `Note to JSON: Format JSON` | Re-indents JSON with 2 spaces | `Ctrl+Alt+J` |
+| `Note to JSON: Compress JSON` | Removes all whitespace, producing a single line | `Ctrl+Alt+M` |
 
-> The command names are in Chinese; the plugin UI is Chinese. Hotkeys can be rebound to anything.
-
-- The editor context menu also offers **格式化 JSON** and **压缩 JSON**, with identical behaviour.
+- The editor context menu also offers **Format JSON** and **Compress JSON**, with identical behaviour.
 - With a selection, only the selection is processed; without one, the whole document is processed.
 - Every write is a single `editor.transaction`, so `Ctrl+Z` reverts it in one step.
 
@@ -89,7 +87,7 @@ Empty containers `{}` / `[]` stay on one line; CRLF documents are written back w
 
 JSON copied from web pages, chat apps or Excel often carries full-width spaces (U+3000), non-breaking spaces (U+00A0), EM SPACE (U+2003), zero-width characters or a BOM inside its indentation. JSON only allows space, tab, LF and CR, so these characters break parsing while the reported snippet looks perfectly fine.
 
-The plugin normalizes these characters to plain spaces **outside string literals only** — not a single character inside a string is touched — and reports “已修正 N 处全角/特殊空白” (fixed N unusual whitespace characters) on success.
+The plugin normalizes these characters to plain spaces **outside string literals only** — not a single character inside a string is touched — and the success notice reports how many unusual whitespace characters were fixed.
 
 ### Strict validation
 

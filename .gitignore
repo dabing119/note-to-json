@@ -1,0 +1,7 @@
+node_modules/
+main.js
+*.map
+.verify/
+data.json
+.DS_Store
+Thumbs.db

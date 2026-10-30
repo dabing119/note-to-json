@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "minAppVersion": "1.4.0",
   "description": "格式化与简化 Markdown 排版，并支持 JSON 格式化与压缩。",
-  "author": "",
-  "authorUrl": "",
+  "author": "Yaobian · 爻变",
+  "authorUrl": "https://github.com/dabing119",
   "isDesktopOnly": false
 }

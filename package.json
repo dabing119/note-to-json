@@ -14,7 +14,8 @@
     "formatter",
     "json"
   ],
-  "author": "",
+  "author": "dabing119",
+  "authorUrl": "https://github.com/dabing119",
   "license": "ISC",
   "devDependencies": {
     "esbuild": "^0.28.2",

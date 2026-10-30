@@ -2,7 +2,7 @@
 
 - 日期：2026-10-29
 - 状态：已实现（见第 11、12 节）
-- 标识：插件 id 与显示名已由 `markdown-tidy` / `Markdown Tidy` 改为 `note-to-json` / `Note to JSON`，版本 0.0.1
+- 标识：插件 id 与显示名已由 `markdown-tidy` / `Markdown Tidy` 改为 `note-to-json` / `Note to JSON`，版本 0.0.5
 - 定位：纯本地 Markdown 排版规范化插件，零外部依赖、零网络请求
 
 ## 1. 目标

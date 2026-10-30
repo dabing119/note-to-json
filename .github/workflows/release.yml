@@ -15,7 +15,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
       - name: Build plugin
         run: |
           npm install
@@ -25,4 +25,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           tag="${GITHUB_REF#refs/tags/}"
-          gh release create "$tag" main.js manifest.json styles.css --notes "Release $tag"
+          # styles.css 是可选文件：本插件没有样式表，列进 gh release create 会让整个命令失败
+          files="main.js manifest.json"
+          if [ -f styles.css ]; then
+            files="$files styles.css"
+          fi
+          gh release create "$tag" $files --title "$tag" --notes "Release $tag"

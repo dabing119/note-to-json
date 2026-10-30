@@ -68,7 +68,7 @@
 {
   "id": "note-to-json",
   "name": "Note to JSON",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "minAppVersion": "1.4.0",
   "description": "格式化与简化 Markdown 排版，纯本地、零网络请求。",
   "author": "",
@@ -81,7 +81,7 @@
 
 ```json
 {
-  "0.0.1": "1.4.0"
+  "0.0.5": "1.4.0"
 }
 ```
 

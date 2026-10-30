@@ -1,7 +1,7 @@
 {
   "id": "note-to-json",
   "name": "Note to JSON",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "minAppVersion": "1.4.0",
   "description": "格式化与简化 Markdown 排版，并支持 JSON 格式化与压缩。",
   "author": "Yaobian · 爻变",
